@@ -1,0 +1,178 @@
+body{
+    font-family: "Myriad Apple", Georgia, Serif;
+}
+.container {
+    font-size: 0.9em;
+}
+img.carimage{
+    min-width: 100%;
+    min-height: 728px;
+    -webkit-filter: brightness(30%);
+}
+.bannerlist{
+    text-align: center  ;
+    display:flex;
+    list-style:none;
+    float: left;
+    font-size: 18px;
+}
+
+.navbar{
+    margin-bottom: 0;
+    font-size: 1.4em;
+}
+.bannerhead{
+    font-family: "Bukhari Script", Georgia, Serif;
+    font-size: 5.0em;
+}
+/*.tamil-text{*/
+    /*font-family:"Tamil Canadian";*/
+/*}*/
+
+.navbar-brand{
+    font-size: 1.4em;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.carousel-caption{
+    position: absolute;
+    top:40px
+}
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.navguest{
+    margin-bottom: 30px;
+}
+#guestbg{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("lib/food1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+#ownerbg{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("lib/food5.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
+#reservepane{
+    max-width: 600px;
+    background-color: white;
+}
+
+.respane-body {
+    padding: 30px 60px;
+}
+.resheader-banner{
+    font-family: "Bukhari Script", Georgia, Serif;
+}
+.resheader-subtext{
+    font-size: 0.7em;
+}
+.title-border {
+    background: url('lib/title-border.png') no-repeat center top;
+    height: 20px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.call-text,.booking-intro{
+    font-size: 1.5em;
+}
+.phone-subtitle{
+    font-size: 2.0em;
+    color: #2D6CA2;
+    
+}
+.fa-calendar-o,.fa-clock-o,.fa-users,.fa-user,.fa-envelope,.fa-phone,.fa-key{
+    position: absolute;
+    right:20px;
+    top: 12px;
+    color: #ccc;
+}
+#ownerhomebg{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("lib/food6.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+
+}
+#ownerhome{
+    background-color: white;
+    padding-left: 0;
+    padding-right: 0;
+}
+ul.nav-tabs a {
+    font-size: 1.1em;
+}
+ul.nav-tabs a span.tab-text {
+    display: none;
+}
+ul.nav-tabs.nav-justified>li {
+    display: table-cell;
+    width: 1%;
+}
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:hover, .nav-tabs.nav-justified>.active>a:focus{
+    background-color:#2D6CA2;
+    color:white;
+}
+.tab-reservation{
+    padding:20px;
+}
+.tab-details{
+    margin-top: 20px;
+}
+.tab-text{
+    font-family: "Bukhari Script", Georgia, Serif;
+    font-size: 1.2em;
+
+}
+.label-text{
+    font-size: 1.2em;
+}
+.tablemap{
+    font-size: 1.2em;
+}
+
+@media (min-width: 512px) {
+    #tab-reservation span.btn-text {
+        display: inline;
+    }
+    .container {
+        font-size: 1em;
+    }
+}
+@media (min-width: 768px) {
+    .tab-content {
+        padding: 40px;
+    }
+    ul.nav-tabs.nav-justified>li {
+        float: none;
+    }
+}
+@media (min-width: 1024px) {
+    ul.nav-tabs a span.tab-text {
+        display: inline;
+    }
+}
+
+
