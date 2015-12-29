@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- view port to define user's visible are -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <!-- Title of the page-->
+    <title>Guest Page</title>
+    <!-- Links to stylesheets -->
+    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap-theme.min.css">
+
+    <!--<link rel="stylesheet" href="styles/jquery.carousel.fullscreen.css" />-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+</head>
+
+<body id="guestbg">
+<!-- Header Starts -->
+<header>
+    <!-- Bootstrap Nav Bar Inverse -->
+    <nav class="navbar navbar-inverse navguest">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- On Collapse for small displays -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Madras Medley</a>
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fa fa-book"></i> Menu</a></li>
+                    <li><a href="#"><i class="fa fa-thumb-tack"></i> Contact</a></li>
+                    <li><a href="#"><i class="fa fa-sign-in"></i>Owner</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section>
+    <div class="container" id="reservepane">
+        <div class="row">
+            <div clas="col-md-8">
+                <div class="resheader">
+                    <h2 class="reserve text-center">
+                        <span class="resheader-banner">Reservations</span><br>
+                        <span class="resheader-subtext">Book a Table</span>
+                        <span class="title-border"></span>
+                    </h2>
+                    <div class="intro text-center">
+                        <p class="call-text">Call us now to book a table</p>
+                        <p class="phone-subtitle">980 829 6342</p>
+                        <p class="booking-intro">Or book online</p>
+                    </div>
+                </div>
+
+                <div class="respane-body">
+                    <form>
+                        <div class="row text-center">
+                            <div class="datepicker-group col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group-inner">
+                                    <i class="fa fa-calendar-o"></i>
+                                    <input type="date" class="form-control" id="reserveDate" placeholder="MM/DD/YYYY">
+                                </div>
+                            </div>
+                            <div class="timepicker-group col-md-6 col-sm-6 col-xs-12 form-group">
+                                <div class="form-group-inner">
+                                    <i class="fa fa-clock-o"></i>
+                                    <input type="time" class="form-control" id="reserveTime" placeholder="HH:MM">
+                                </div>
+                            </div>
+                            <div class="guest-group col-md-6 col-sm-6 col-xs-12 form-group">
+                                <div class="form-group-inner">
+                                    <i class="fa fa-users"></i>
+                                    <select class="form-control add-padding" id="cguests" name="guests"
+                                            aria-required="true" required="">
+                                        <option value="" selected="">Select number of guests</option>
+                                        <option value="1">1 People</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7">7 People</option>
+                                        <option value="8">8 People</option>
+                                        <option value="9">9 People</option>
+                                        <option value="10">10 People</option>
+                                        <option value="11">11 People</option>
+                                        <option value="12">12 People</option>
+                                        <option value="13">13 People</option>
+                                        <option value="14">14 People</option>
+                                        <option value="15">15 People</option>
+                                        <option value="16">16 People</option>
+                                        <option value="17">17 People</option>
+                                        <option value="18">18 People</option>
+                                        <option value="19">19 People</option>
+                                        <option value="20">20 People</option>
+                                        <option value="20+">20+ People</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="name-group col-md-6 col-sm-6 col-xs-12 form-group">
+                                <div class="form-group-inner">
+                                    <i class="fa fa-user"></i>
+                                    <input type="text" class="form-control add-padding" id="cname" name="name"
+                                           placeholder="Your name" minlength="2" aria-required="true" required="">
+                                </div>
+                            </div>
+                            <div class="email-group col-md-6 col-sm-6 col-xs-12 form-group">
+                                <div class="form-group-inner">
+                                    <i class="fa fa-envelope"></i>
+                                    <input type="email" class="form-control add-padding" id="cemail" name="email"
+                                           placeholder="Email Address" aria-required="true" required="">
+                                </div>
+                            </div>
+                            <div class="phone-group col-md-6 col-sm-6 col-xs-12 form-group">
+                                <div class="form-group-inner">
+                                    <i class="fa fa-phone"></i>
+                                    <input type="tel" class="form-control add-padding" id="cphone" name="phone"
+                                           placeholder="Phone Number" aria-required="true" required="">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                <button type="submit" class="btn btn-block btn-primary">Reserve Table</button>
+                                <button type="button" class="btn btn-link">Change Existing Reservation?</button>
+                            </div>
+                        </div><!--//row-->
+                    </form><!--//reserve-form-->
+                </div><!--//respane-body-->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</div>
+<script type="text/javascript" src="scripts/lib/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
+
+</body>
+
+</html>
