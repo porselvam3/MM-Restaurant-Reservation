@@ -30,7 +30,7 @@ public class GuestReservationController {
 	@Produces(MediaType.APPLICATION_JSON)
 	//creating a list object
 
-	//controller calliasng the DAO
+	//controller calling the DAO
 	public List<GuestReservation> getReservations(){
 		List<GuestReservation> guestReservations = null;
 		try {
